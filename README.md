@@ -6,4 +6,4 @@ Roteador usando apenas golang
 
 `PORT=<porta> go run .`
 
-Os arquivos **go.mod** e **Procfile** foram para realizar Deploy no *heroku*.
+Os arquivos **go.mod** e **Procfile** foram para realizar Deploy no [heroku](https://www.heroku.com).
