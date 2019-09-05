@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"regexp"
 	"strconv"
+	"os"
 )
 
 type Usuario struct {
@@ -42,6 +43,7 @@ func usuariosHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	porta := os.Getenv("PORT")
 	http.HandleFunc("/usuarios/", usuariosHandler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":" + porta, nil)
 }
